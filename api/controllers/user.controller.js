@@ -1,5 +1,3 @@
 export const test = (req, res) => {
-  res.json({ 
-    message: 'User controller!' 
-});
-}
+  console.log(req.body);
+};
