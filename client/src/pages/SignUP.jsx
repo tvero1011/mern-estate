@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function Signout() {
+export default function SignUp() {
   return (
-    <div>Signout</div>
+    <div>
+      <h1 className='text-3xl text-center font-semibold my-3'>Sign Up</h1>
+    </div>
   )
 }
