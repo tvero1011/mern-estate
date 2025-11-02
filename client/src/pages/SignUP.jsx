@@ -32,7 +32,7 @@ export default function SignUp() {
       }
       setLoading(false);
       setError(null);
-      navigate('/sign-in');
+      navigate('/signin');
     } catch (error) {
       setLoading(false);
       setError(error.message);
@@ -78,7 +78,8 @@ export default function SignUp() {
               <span className='text-blue-700'> Sign in</span>
             </Link> 
             </p> 
-       </div>     
+       </div>   
+          {error && <p className='mt-4 text-red-600'>{error}</p>}  
     </div>
       )
 };
