@@ -1,5 +1,6 @@
 import { Link , useNavigate} from 'react-router-dom';
 import { useState } from 'react';
+import Oauth from '../components/Oauth';
 
 export default function Signin() {
   const [formData, setFormData] = useState({});
@@ -63,9 +64,10 @@ export default function Signin() {
         >
           {loading ? 'Loading...' : 'Sign In'}
         </button>
+        <Oauth />
        </form>
    
-       <div classname ='flex gap-2 mt-5'>
+       <div className='flex gap-2 mt-5'>
             <p>Don't have an account?
             <Link to={'/Signup'}>
               <span className='text-blue-700'> Sign up</span>
